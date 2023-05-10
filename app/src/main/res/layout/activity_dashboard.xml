@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Dashboard">
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        tools:openDrawer="start">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintBottom_toTopOf="@+id/drawer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/drawer"
+            app:layout_constraintVertical_bias="0.7">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                <com.smarteist.autoimageslider.SliderView-->
+<!--                    android:id="@+id/slider"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    app:sliderAnimationDuration="600"-->
+<!--                    app:sliderAutoCycleDirection="back_and_forth"-->
+<!--                    app:sliderIndicatorAnimationDuration="600"-->
+<!--                    app:sliderIndicatorEnabled="true"-->
+<!--                    app:sliderIndicatorGravity="center_horizontal|bottom"-->
+<!--                    app:sliderIndicatorMargin="15dp"-->
+<!--                    app:sliderIndicatorOrientation="horizontal"-->
+<!--                    app:sliderIndicatorPadding="3dp"-->
+<!--                    app:sliderIndicatorRadius="2dp"-->
+<!--                    app:sliderIndicatorSelectedColor="#5A5A5A"-->
+<!--                    app:sliderIndicatorUnselectedColor="#FFF"-->
+<!--                    app:sliderScrollTimeInSec="1" />-->
+
+                <!--                <com.denzcoskun.imageslider.ImageSlider-->
+<!--                    android:id="@+id/imageSlider"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    app:iss_auto_cycle="true"-->
+<!--                    app:iss_corner_radius="10"-->
+<!--                    app:iss_delay="1000"-->
+<!--                    app:iss_period="1000"-->
+<!--                    app:iss_title_background="@drawable/gradient" />-->
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="371dp"
+                    android:layout_height="135dp" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="110dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="#FF9800"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/drawer"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.064">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="162dp">
+
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:id="@+id/btncompanies"-->
+<!--                        android:layout_height="162dp"-->
+<!--                        android:src="@drawable/company"/>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"
+                    android:textColor="#572D2A"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="110dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="#FF9800"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="130dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/drawer"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.064">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="162dp">
+
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="162dp"-->
+<!--                        android:onClick="liaison_officers"-->
+<!--                        android:src="@drawable/liaison"/>-->
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="d"
+                    android:textColor="#572D2A"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="110dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="#FF9800"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="250dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/drawer"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.064">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="162dp">
+
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="162dp"-->
+<!--                        android:onClick="apply_company"-->
+<!--                        android:src="@drawable/apply"/>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="c"
+                    android:textColor="#572D2A"
+                    android:layout_gravity="bottom|center"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card5"
+                android:layout_width="110dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="#FF9800"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/drawer"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.064">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="162dp">
+
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="162dp"-->
+<!--                        android:onClick="study_material"-->
+<!--                        android:src="@drawable/study"/>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="e"
+                    android:textColor="#572D2A"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card6"
+                android:layout_width="110dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="#FF9800"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginLeft="130dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/drawer"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.064">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="162dp">
+
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="162dp"-->
+<!--                        android:onClick="complaints"-->
+<!--                        android:src="@drawable/complaints"/>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="f"
+                    android:textColor="#572D2A"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card7"
+                android:layout_width="110dp"
+                android:layout_height="162dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:outlineSpotShadowColor="#FF9800"
+                app:cardElevation="20dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginLeft="250dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/drawer"
+                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0.064">
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="162dp">
+
+<!--                    <pl.droidsonroids.gif.GifImageView-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="162dp"-->
+<!--                        android:onClick="contact_us"-->
+<!--                        android:src="@drawable/contactus"/>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="b"
+                    android:textColor="#572D2A"
+                    android:layout_gravity="bottom|center"/>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            <pl.droidsonroids.gif.GifImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:id="@+id/btncompanies1"-->
+<!--                android:src="@drawable/message"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_gravity="bottom|right"/>-->
+
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/navmenu"
+            app:menu="@menu/navmenu"
+            app:headerLayout="@layout/navheader"
+            android:layout_gravity="start"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Dashboard"
+        app:titleMarginStart="10dp"
+        app:titleTextColor="#FFF"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
