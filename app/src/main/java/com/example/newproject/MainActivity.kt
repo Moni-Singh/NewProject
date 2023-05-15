@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({
 
-             var i = Intent(this@MainActivity,RegisterPage::class.java)
+             var i = Intent(this@MainActivity,LoginPage::class.java)
             startActivity(i)
         },1000)
     }

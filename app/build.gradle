@@ -1,6 +1,11 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+//    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -38,6 +43,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -53,10 +59,25 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
 
 //gif
-        implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation 'com.google.android.libraries.places:places:2.5.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
+//
 
 
-
-
+    // For Places API
+    implementation 'com.google.android.libraries.places:places:3.1.0'
 
 }
+
+secrets {
+    // To add your Places API key to this project:
+    // 1. Update a file in your root project called `local.properties` and add this line,
+    // where YOUR_API_KEY is your API key:
+    //     PLACES_API_KEY=YOUR_API_KEY
+    defaultPropertiesFileName 'local.properties'
+}
+
+

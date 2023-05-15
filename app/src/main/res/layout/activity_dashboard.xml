@@ -17,6 +17,7 @@
 
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -29,43 +30,17 @@
             app:layout_constraintVertical_bias="0.7">
 
 
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="141dp"
+                android:background="@color/white">
 
-<!--                <com.smarteist.autoimageslider.SliderView-->
-<!--                    android:id="@+id/slider"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="150dp"-->
-<!--                    android:layout_centerInParent="true"-->
-<!--                    app:sliderAnimationDuration="600"-->
-<!--                    app:sliderAutoCycleDirection="back_and_forth"-->
-<!--                    app:sliderIndicatorAnimationDuration="600"-->
-<!--                    app:sliderIndicatorEnabled="true"-->
-<!--                    app:sliderIndicatorGravity="center_horizontal|bottom"-->
-<!--                    app:sliderIndicatorMargin="15dp"-->
-<!--                    app:sliderIndicatorOrientation="horizontal"-->
-<!--                    app:sliderIndicatorPadding="3dp"-->
-<!--                    app:sliderIndicatorRadius="2dp"-->
-<!--                    app:sliderIndicatorSelectedColor="#5A5A5A"-->
-<!--                    app:sliderIndicatorUnselectedColor="#FFF"-->
-<!--                    app:sliderScrollTimeInSec="1" />-->
-
-                <!--                <com.denzcoskun.imageslider.ImageSlider-->
-<!--                    android:id="@+id/imageSlider"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="200dp"-->
-<!--                    app:iss_auto_cycle="true"-->
-<!--                    app:iss_corner_radius="10"-->
-<!--                    app:iss_delay="1000"-->
-<!--                    app:iss_period="1000"-->
-<!--                    app:iss_title_background="@drawable/gradient" />-->
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/viewPager"
                     android:layout_width="371dp"
-                    android:layout_height="135dp" />
+                    android:layout_height="135dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="21dp" />
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
@@ -77,6 +52,7 @@
                 app:cardElevation="20dp"
                 android:clickable="true"
                 android:padding="5dp"
+                android:background = "@drawable/place"
                 android:layout_marginTop="220dp"
                 android:layout_marginLeft="10dp"
                 app:cardCornerRadius="8dp"
@@ -86,17 +62,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 app:layout_constraintVertical_bias="0.064">
 
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="162dp">
 
-<!--                    <pl.droidsonroids.gif.GifImageView-->
-<!--                        android:layout_width="110dp"-->
-<!--                        android:id="@+id/btncompanies"-->
-<!--                        android:layout_height="162dp"-->
-<!--                        android:src="@drawable/company"/>-->
+                <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/sag"/>
 
-                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -125,22 +96,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 app:layout_constraintVertical_bias="0.064">
 
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="162dp">
 
-<!--                    <pl.droidsonroids.gif.GifImageView-->
-<!--                        android:layout_width="110dp"-->
-<!--                        android:layout_height="162dp"-->
-<!--                        android:onClick="liaison_officers"-->
-<!--                        android:src="@drawable/liaison"/>-->
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/desetjpg"/>
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
 
-                    </RelativeLayout>
-                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -169,17 +132,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 app:layout_constraintVertical_bias="0.064">
 
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="162dp">
-
-<!--                    <pl.droidsonroids.gif.GifImageView-->
-<!--                        android:layout_width="110dp"-->
-<!--                        android:layout_height="162dp"-->
-<!--                        android:onClick="apply_company"-->
-<!--                        android:src="@drawable/apply"/>-->
-
-                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nonvg"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -209,18 +165,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 app:layout_constraintVertical_bias="0.064">
-
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="162dp">
-
-<!--                    <pl.droidsonroids.gif.GifImageView-->
-<!--                        android:layout_width="110dp"-->
-<!--                        android:layout_height="162dp"-->
-<!--                        android:onClick="study_material"-->
-<!--                        android:src="@drawable/study"/>-->
-
-                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/food"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -249,18 +197,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 app:layout_constraintVertical_bias="0.064">
 
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="162dp">
-
-<!--                    <pl.droidsonroids.gif.GifImageView-->
-<!--                        android:layout_width="110dp"-->
-<!--                        android:layout_height="162dp"-->
-<!--                        android:onClick="complaints"-->
-<!--                        android:src="@drawable/complaints"/>-->
-
-                </LinearLayout>
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ice"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -288,18 +228,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardView"
                 app:layout_constraintVertical_bias="0.064">
 
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="162dp">
-
-<!--                    <pl.droidsonroids.gif.GifImageView-->
-<!--                        android:layout_width="110dp"-->
-<!--                        android:layout_height="162dp"-->
-<!--                        android:onClick="contact_us"-->
-<!--                        android:src="@drawable/contactus"/>-->
-
-                </LinearLayout>
-
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

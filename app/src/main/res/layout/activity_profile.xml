@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="167dp"
+                android:layout_height="157dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_circlwe"
+                android:padding="@dimen/_40sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonLoadPicture"
+                android:layout_width="44dp"
+                android:layout_height="46dp"
+                android:background="@drawable/ic_baseline_add_24"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                tools:layout_editor_absoluteY="147dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="2dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bioinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+
+            <EditText
+                android:id="@+id/oldpasslog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio info"
+                android:inputType="text"
+                android:drawableEnd="@drawable/ic_baseline_description_24"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oldpasslog"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/Basic_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:inputType="text"
+              />
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:drawableEnd="@drawable/ic_baseline_male_24"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:drawableEnd="@drawable/ic_baseline_female_24"/>
+
+            </RadioGroup>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/brthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birthday"
+                android:inputType="text"
+                android:drawableEnd="@drawable/ic_baseline_cake_24"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oldpasslog"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/Education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Education"
+                android:inputType="text"
+                android:drawableEnd="@drawable/ic_baseline_history_edu_24"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/updatepass"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Edit Profile "
+        />
+        <Button
+        android:id="@+id/save"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Save "
+        />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
